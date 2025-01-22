@@ -7,4 +7,5 @@ int main()
     printf("\nenter the value of a,b");
     scanf("%d%d",&a,&b);
     sum = a+b;
+    return 0;
 }
