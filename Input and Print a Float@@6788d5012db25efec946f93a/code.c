@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float a;
+    float num;
     int mynum = 3.14;
     printf("%d",mynum);
     return 0;
