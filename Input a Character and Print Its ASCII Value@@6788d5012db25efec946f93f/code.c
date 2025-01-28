@@ -2,6 +2,6 @@
 int main() {
     char character;
     scanf("%d",&character);
-    printf("ASCII Value,%d",character);
+    printf("ASCII Value,character);
     return 0;
 }
