@@ -5,13 +5,13 @@ int main() {
     scanf("%c",&G);
     scanf("%c",&Y);
     if(traffic light:R){
-        printf("Stop");
+        printf("Stop/n");
     }
     else if (traffic light:G){
-        printf("Go");
+        printf("Go/n");
     }
     else if (traffic light:Y){
-        printf("Slow Down");
+        printf("Slow Down/n");
     }
     else{
         printf("Invalid input");
