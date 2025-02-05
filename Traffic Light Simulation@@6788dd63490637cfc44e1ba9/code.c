@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int R,G,Y;
+    char R,G,Y;
     scanf("%c",&R);
     scanf("%c",&G);
     scanf("%c",&Y);
@@ -10,7 +10,7 @@ int main() {
     else if (traffic light:G){
         printf("Go");
     }
-    else (traffic light:Y){
+    else if (traffic light:Y){
         printf("Slow Down");
     }
     else{
