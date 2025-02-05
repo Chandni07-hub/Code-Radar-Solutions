@@ -1,9 +1,11 @@
 #include <stdio.h>
 int main() {
     char R,G,Y;
+    printf("Enter traffic light color (R, G, Y): ");
     scanf("%c",&R);
     scanf("%c",&G);
     scanf("%c",&Y);
+    
     if (R == 'R') {
         printf("Stop");
     } 
