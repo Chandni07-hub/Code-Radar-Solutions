@@ -4,11 +4,10 @@ int main() {
     scanf("%c",&R);
     scanf("%c",&G);
     scanf("%c",&Y);
-    
     if (R == 'R') {
         printf("Stop\n");
     } 
-    else if (G == 'G') {
+    else if (G == 'Go') {
         printf("Go\n");
     } 
     else if (Y == 'Y') {
