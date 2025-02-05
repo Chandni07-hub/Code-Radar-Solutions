@@ -4,8 +4,7 @@
 int main() {
     char ch;
     scanf("%c",&ch);
-    char lowerCh=tolower(ch);
+    char lowerCh = tolower(ch);
     if (lowerCh == 'a'|| lowerCh == 'e'|| lowerCh == 'i'|| lowerCh == 'o'||lowerCh == 'u') {
     printf("Vowel\n");
-    return 0;
 }
