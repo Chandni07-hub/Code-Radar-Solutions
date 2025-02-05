@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
-    int a,n;
-    scanf("%d",&a, &n);
-    printf("%d",n^(1<<n));
+    int n,m;
+    scanf("%d"%d",&n, &m);
+    printf("%d\n",a=a^(1<<n));
     return 0;
 }
