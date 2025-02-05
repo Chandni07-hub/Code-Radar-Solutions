@@ -7,7 +7,7 @@ int main() {
     if (R == 'R') {
         printf("Stop\n");
     } 
-    else if (G == 'Go') {
+    else if (G == 'G') {
         printf("Go\n");
     } 
     else if (Y == 'Y') {
