@@ -11,4 +11,5 @@ int main(){
     else (a%5==0) {
         printf("Divisible by 5");
     }
+    return 0;
 }
