@@ -4,17 +4,18 @@ int main() {
     scanf("%c",&R);
     scanf("%c",&G);
     scanf("%c",&Y);
-    if(traffic light:R){
-        printf("Stop/n");
-    }
-    else if (traffic light:G){
-        printf("Go/n");
-    }
-    else if (traffic light:Y){
-        printf("Slow Down/n");
-    }
-    else{
-        printf("Invalid input");
+    
+    if (R == 'R') {
+        printf("Stop\n");
+    } 
+    else if (G == 'G') {
+        printf("Go\n");
+    } 
+    else if (Y == 'Y') {
+        printf("Slow Down\n");
+    } 
+    else {
+        printf("Invalid input\n");
     }
     return 0;
 }
