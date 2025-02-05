@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main() {
-    ch R,G,Y;
-    scanf("%c",&ch);
-    
-    if (R == 'R') {
+    char light;
+    scanf("%ch",&light);
+    switch(light){
+        case 'R':
         printf("Stop");
-    } 
-    else if (G == 'G') {
+        break;
+        case 'G':
         printf("Go");
-    } 
-    else if (Y == 'Y') {
+        break;
+        case 'Y':
         printf("Slow Down");
-    } 
-    else {
+        break;
+        default:
         printf("Invalid input");
     }
     return 0;
