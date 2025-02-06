@@ -10,7 +10,7 @@ int main() {
         printf("Prime");
     }
     else{
-        printf("Invalid")
+        printf("Invalid");
     }
     return 0;
 }
