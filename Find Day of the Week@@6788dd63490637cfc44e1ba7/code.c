@@ -25,5 +25,4 @@ int days=1-7;
         printf("Sunday");
         break;
     }
-    return 0;
 }
