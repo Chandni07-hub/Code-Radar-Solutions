@@ -27,4 +27,5 @@ int days=1-7;
         default:
         printf("Invalid day");
     }
+    return 0;
 }
