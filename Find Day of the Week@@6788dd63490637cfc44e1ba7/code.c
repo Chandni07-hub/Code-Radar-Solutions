@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-int days=1-7;
+    int day=1-7;
     scanf("%d",&day);
     switch(day){
         case 1:
