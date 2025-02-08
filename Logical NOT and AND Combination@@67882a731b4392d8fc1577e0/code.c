@@ -1,17 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
+    int a, b;
+    scanf("%d %d", &a, &b);
 
-    // Taking input for the two numbers
-    printf("Enter two numbers:\n");
-    scanf("%d %d", &num1, &num2);
-
-    // Checking if neither of the two numbers is greater than zero
-    if (!(num1 > 0) && !(num2 > 0)) {
-        printf("Neither of the two numbers is greater than zero.\n");
+    if (!(a > 0) && !(b > 0)) {
+        printf("True");
     } else {
-        printf("At least one of the numbers is greater than zero.\n");
+        printf("False");
     }
 
     return 0;
