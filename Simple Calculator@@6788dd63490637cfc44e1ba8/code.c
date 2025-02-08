@@ -11,9 +11,7 @@ int main() {
     // Read the two numbers
     printf("Enter two operands: ");
     scanf("%lf %lf", &a, &b);
-    
-    // Define all four operations in the corresponding
-    // switch-case
+   
     switch (op) {
     case '+':
         res = a + b;
