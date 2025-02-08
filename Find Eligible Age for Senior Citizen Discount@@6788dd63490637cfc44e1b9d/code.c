@@ -1,7 +1,12 @@
 include <stdio.h>
 int main() {
-    int a,n;
-    scanf("%d %d",&a,&n);
-    printf("%d\n",(a>>n)&1);
-    return 0;
+    int age;
+    scanf("%d",&age);
+    
+    if(age<=60){
+        printf("Eligible");
+    }
+    else{
+        printf("Not Eligible");
+    }
 }
