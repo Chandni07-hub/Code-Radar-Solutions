@@ -1,4 +1,8 @@
 #include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+}
 
 void find_max_min(int arr[], int n, int *max, int *min) {
     *max = *min = arr[0];
@@ -11,14 +15,6 @@ void find_max_min(int arr[], int n, int *max, int *min) {
         }
     }
 }
-
-int main() {
-    int n;
-    
-    // Prompt user for the number of elements
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &n);
-    
     int arr[n];
     
     // Read array elements from user
