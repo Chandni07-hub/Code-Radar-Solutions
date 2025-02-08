@@ -1,18 +1,38 @@
-def find_max_min(array):
-    # Initialize maximum and minimum with the first element
-    max_element = min_element = array[0]
-    
-    # Iterate through the array
-    for num in array:
-        if num > max_element:
-            max_element = num
-        if num < min_element:
-            min_element = num
-            
-    return max_element, min_element
+#include <stdio.h>
 
-# Example usage
-array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-max_element, min_element = find_max_min(array)
-print(f"Maximum element: {max_element}")
-print(f"Minimum element: {min_element}")
+void find_max_min(int arr[], int n, int *max, int *min) {
+    *max = *min = arr[0];
+    for(int i = 1; i < n; i++) {
+        if(arr[i] > *max) {
+            *max = arr[i];
+        }
+        if(arr[i] < *min) {
+            *min = arr[i];
+        }
+    }
+}
+
+int main() {
+    int n;
+    
+    // Prompt user for the number of elements
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    // Read array elements from user
+    printf("Enter the elements of the array:\n");
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    int max, min;
+    find_max_min(arr, n, &max, &min);
+    
+    // Output the maximum and minimum elements
+    printf("Maximum element: %d\n", max);
+    printf("Minimum element: %d\n", min);
+    
+    return 0;
+}
