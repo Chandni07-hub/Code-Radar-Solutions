@@ -1,22 +1,5 @@
-#include <stdio.h>
-
-int main() {
-    int rows;
-
-    scanf("%d", &rows);
-
-    for (int i = 1; i <= rows; i++) {
-        // Print leading spaces
-        for (int j = i; j < rows; j++) {
-            printf("  "); // Two spaces for better alignment
-        }
-        // Print numbers in increasing order
-        for (int k = 1; k <= i; k++) {
-            printf("%d ", k);
-        }
-        // Move to the next line
-        printf("\n");
-    }
-
-    return 0;
-}
+def pyramid(n):
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            print(j, end=' ')
+        print()
