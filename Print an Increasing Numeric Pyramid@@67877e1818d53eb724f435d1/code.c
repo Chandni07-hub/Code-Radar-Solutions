@@ -2,8 +2,6 @@
 
 int main() {
     int rows;
-
-    // Input number of rows for the pyramid
     scanf("%d", &rows);
 
     for (int i = 1; i <= rows; i++) {
