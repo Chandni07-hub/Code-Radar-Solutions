@@ -10,10 +10,6 @@ void reverseAlphabetTriangle(int n) {
         }
         printf("\n");
     }
-}
 
-int main() {
-    int n = 5; // Change this value to adjust the height of the triangle
-    reverseAlphabetTriangle(n);
     return 0;
 }
