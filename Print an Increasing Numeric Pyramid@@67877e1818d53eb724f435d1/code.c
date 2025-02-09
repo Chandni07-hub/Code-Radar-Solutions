@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int rows, number = 1;
+    int rows;
 
     // Input number of rows for the pyramid
     printf("Enter the number of rows: ");
@@ -14,7 +14,7 @@ int main() {
         }
         // Print numbers in increasing order
         for (int k = 1; k <= i; k++) {
-            printf("%d ", number++);
+            printf("%d", k);
         }
         // Move to the next line
         printf("\n");
