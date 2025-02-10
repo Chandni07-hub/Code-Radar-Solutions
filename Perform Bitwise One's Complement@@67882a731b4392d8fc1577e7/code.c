@@ -1,8 +1,7 @@
-int main() 
-{
-  int n = 2;
-  printf("Bitwise complement of %d : %d",
-          n, ~n);
-  return 0;
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("%d\n", ~a);
+    return 0;
 }
-
