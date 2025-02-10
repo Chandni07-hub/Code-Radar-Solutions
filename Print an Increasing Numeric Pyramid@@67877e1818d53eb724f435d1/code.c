@@ -1,15 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, j;
-    
+    int rows;
 
-    scanf("%d", &n);
+    // Ask the user to input the number of rows
 
-    for (i = n; i >= 1; i--) {
-        for (j = 1; j <= i; j++) {
-            printf("%c ", 'A' + j - 1);
+    scanf("%d", &rows);
+
+    // Outer loop for each row
+    for (int i = 1; i <= rows; i++) {
+        // Inner loop for spaces before the numbers
+        for (int j = 1; j <= rows - i; j++) {
+            printf(" ");
         }
+
+        // Inner loop to print the numbers in each row
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+
+        // Move to the next line after printing each row
         printf("\n");
     }
 
