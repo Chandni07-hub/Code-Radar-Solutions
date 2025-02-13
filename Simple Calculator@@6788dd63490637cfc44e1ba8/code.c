@@ -28,21 +28,3 @@ int calculate(int num1, int num2, char operator) {
     }
     return result;
 }
-
-int main() {
-    // First calculation: 5 + 3
-    int num1 = 5;
-    int num2 = 3;
-    char operator = '+';
-    int result = calculate(num1, num2, operator);
-    printf("%d\n", result); // Output: 8
-
-    // Second calculation: 10 / 2
-    num1 = 10;
-    num2 = 2;
-    operator = '/';
-    result = calculate(num1, num2, operator);
-    printf("%d\n", result); // Output: 5
-
-    return 0;
-}
