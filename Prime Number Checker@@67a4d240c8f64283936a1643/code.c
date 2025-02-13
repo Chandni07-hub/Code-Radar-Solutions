@@ -15,14 +15,3 @@ int is_prime(int n) {
     }
     return 1;
 }
-
-int main() {
-    int number = 17; // Example number to check
-    if (is_prime(number)) {
-        printf("%d is a prime number.\n", number);
-    } else {
-        printf("%d is not a prime number.\n", number);
-    }
-    return 0;
-}
-
