@@ -30,20 +30,19 @@ int calculate(int num1, int num2, char operator) {
 }
 
 int main() {
-    int num1, num2;
-    char operator;
-
     // First calculation: 5 + 3
-    num1 = 5;
-    operator = '+';
-    num2 = 3;
-    printf("%d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 8
+    int num1 = 5;
+    int num2 = 3;
+    char operator = '+';
+    int result = calculate(num1, num2, operator);
+    printf("Result: %d\n", result); // Output: 8
 
     // Second calculation: 10 / 2
     num1 = 10;
-    operator = '/';
     num2 = 2;
-    printf("%d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 5
+    operator = '/';
+    result = calculate(num1, num2, operator);
+    printf("Result: %d\n", result); // Output: 5
 
     return 0;
 }
