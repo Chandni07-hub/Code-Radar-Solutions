@@ -1,17 +1,28 @@
+#include <stdio.h>
+#include <math.h>
 
-    # If n is less than 2, it is not a prime number
-    if n <= 1:
-        return 0
-    # Check if n has any divisors other than 1 and itself
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return 0
-    return 1
+// Function to check if a number is prime
+int is_prime(int n) {
+    // If n is less than 2, it is not a prime number
+    if (n <= 1) {
+        return 0;
+    }
+    // Check if n has any divisors other than 1 and itself
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
 
-# Example usage
-number = 17
-if is_prime(number):
-    print(f"{number} is a prime number.")
-else:
-    print(f"{number} is not a prime number.")
-/ Your code here...
+int main() {
+    int number = 17; // Example number to check
+    if (is_prime(number)) {
+        printf("%d is a prime number.\n", number);
+    } else {
+        printf("%d is not a prime number.\n", number);
+    }
+    return 0;
+}
+
