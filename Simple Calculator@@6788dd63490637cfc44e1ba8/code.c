@@ -37,13 +37,13 @@ int main() {
     num1 = 5;
     operator = '+';
     num2 = 3;
-    printf("Result of %d %c %d: %d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 8
+    printf("%d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 8
 
     // Second calculation: 10 / 2
     num1 = 10;
     operator = '/';
     num2 = 2;
-    printf("Result of %d %c %d: %d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 5
+    printf("%d\n", num1, operator, num2, calculate(num1, num2, operator)); // Output: 5
 
     return 0;
 }
