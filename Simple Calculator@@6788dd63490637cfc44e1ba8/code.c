@@ -35,14 +35,14 @@ int main() {
     int num2 = 3;
     char operator = '+';
     int result = calculate(num1, num2, operator);
-    printf("Result: %d\n", result); // Output: 8
+    printf("%d\n", result); // Output: 8
 
     // Second calculation: 10 / 2
     num1 = 10;
     num2 = 2;
     operator = '/';
     result = calculate(num1, num2, operator);
-    printf("Result: %d\n", result); // Output: 5
+    printf("%d\n", result); // Output: 5
 
     return 0;
 }
