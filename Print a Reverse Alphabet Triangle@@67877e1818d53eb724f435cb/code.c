@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-void reverseAlphabetTriangle(int n) {
-    char c;
-    for (int i = n; i >= 1; i--) {
-        c = 'A';
-        for (int j = 1; j <= i; j++) {
-            printf("%c ", c);
-            c++;
+int main() {
+    int n, i, j;
+    
+
+    scanf("%d", &n);
+
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            printf("%c ", 'A' + j - 1);
         }
         printf("\n");
     }
