@@ -23,7 +23,6 @@ void printArray(int arr[], int n) {
     printf("\n");
 }
 
-int main() {
     int n, i;
     printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
