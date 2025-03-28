@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 int countVowels(const char *str);
