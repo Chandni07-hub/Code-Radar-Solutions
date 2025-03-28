@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int countGlovePairs(int gloves[], int n) {
     int freq[101] = {0}; 
     int pairs = 0;
@@ -11,7 +10,6 @@ int countGlovePairs(int gloves[], int n) {
     }
     return pairs;
 }
-int main() {
     int n;
     scanf("%d", &n);
     int gloves[1000];
