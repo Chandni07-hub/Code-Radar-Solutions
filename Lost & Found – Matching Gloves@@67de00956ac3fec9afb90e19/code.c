@@ -31,4 +31,4 @@ int main() {
     printf("%d\n", pairs);
 
     return 0;
-}.
+}
