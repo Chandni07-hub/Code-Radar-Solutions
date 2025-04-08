@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 // Function to reverse characters in a word
 void reverseWord(char *start, char *end) {
     while(start < end) {
@@ -11,7 +10,6 @@ void reverseWord(char *start, char *end) {
         end--;
     }
 }
-
 int main() {
     char str[1000];
 
@@ -25,7 +23,6 @@ int main() {
 
     char *word_start = NULL;
     char *temp = str;
-
     while(*temp) {
         if((word_start == NULL) && (*temp != ' ')) {
             word_start = temp;
@@ -36,8 +33,6 @@ int main() {
         }
         temp++;
     }
-
     printf("%s\n", str);
-
     return 0;
 }
