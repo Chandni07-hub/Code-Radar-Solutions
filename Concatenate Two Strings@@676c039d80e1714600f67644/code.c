@@ -44,4 +44,4 @@ int main() {
     printf("%s\n", result);
 
     return 0;
-}.
+}
