@@ -1,33 +1,19 @@
 #include <stdio.h>
 #include <string.h>
-
-void reverseWords(char *str) {
-    char *words[100];
-    int count = 0;
-
-    // Split the string into words
-    char *token = strtok(str, " \n");
-    while (token != NULL) {
-        words[count++] = token;
-        token = strtok(NULL, " \n");
-    }
-
-    // Print words in reverse order
-    for (int i = count - 1; i >= 0; i--) {
-        printf("%s", words[i]);
-        if (i > 0) printf(" ");
-    }
-    printf("\n");
-}
+#include <stdio.h>
+#include <string.h>
 
 int main() {
-    char str[1000];
+    char str[100], words[20][20];
+    int i = 0, j = 0, k = 0, wordCount = 0;
 
-    // Read the input string
+    printf("Enter a sentence: ");
     fgets(str, sizeof(str), stdin);
 
-    // Reverse words
-    reverseWords(str);
+    // Split string into words manually
+    while (str[i] != '\0' && str[i] != '\n') {
+        if (str[i] == ' ') {
+            words[wordCount][j] = '\0'; // end current word
+            wordCount++;
+            j = 0; // reset letter index
 
-    return 0;
-}
