@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
 void reverseWord(char *start, char *end) {
     while (start < end) {
         char temp = *start;
@@ -11,7 +10,6 @@ void reverseWord(char *start, char *end) {
         end--;
     }
 }
-
 int main() {
     char str[1000];
     fgets(str, sizeof(str), stdin);  // Read input string
@@ -29,10 +27,8 @@ int main() {
             reverseWord(word_start, word_end);
             word_start = NULL;
         }
-
         temp++;
     }
-
     printf("%s", str);
     return 0;
 }
