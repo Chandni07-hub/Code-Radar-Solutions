@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void reverseWord(char str[], int start, int end) {
+int reverseWord(char str[], int start, int end) {
     while (start < end) {
         char temp = str[start];
         str[start] = str[end];
