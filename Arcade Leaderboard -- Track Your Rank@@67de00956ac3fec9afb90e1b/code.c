@@ -1,5 +1,5 @@
 #include <stdio.h>
-void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
+int main trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
     int denseRanks[200000], rank = 1;
     denseRanks[0] = ranked[0];
     // Create dense ranking
