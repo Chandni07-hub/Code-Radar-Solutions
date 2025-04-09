@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 struct Subscription {
@@ -32,4 +31,4 @@ int main() {
     printf("Standard: %d Users, Revenue: %.2f; ", standardCount, standardRevenue);
     printf("Premium: %d Users, Revenue: %.2f\n", premiumCount, premiumRevenue);
     return 0;
-}.
+}
