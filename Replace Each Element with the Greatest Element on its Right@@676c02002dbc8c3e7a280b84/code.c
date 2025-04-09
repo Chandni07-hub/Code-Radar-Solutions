@@ -2,29 +2,29 @@
 
 int main() {
     int n;
-    scanf("%d", &n);  // Size of array
+    scanf("%d", &n); // Read array size
 
     int arr[n];
-    int freq[10001] = {0};  // Frequency array
-    int maxFreq = 0;
-    int result = 10001;  // Large number to start with
-
-    // Read elements
+    // Read array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-        freq[arr[i]]++;
     }
 
-    // Find element with max frequency (and smallest value if tie)
-    for (int i = 0; i < 10001; i++) {
-        if (freq[i] > maxFreq) {
-            maxFreq = freq[i];
-            result = i;
-        } else if (freq[i] == maxFreq && i < result) {
-            result = i;
+    int maxRight = -1;
+
+    // Traverse from right to left
+    for (int i = n - 1; i >= 0; i--) {
+        int temp = arr[i];
+        arr[i] = maxRight;
+        if (temp > maxRight) {
+            maxRight = temp;
         }
     }
 
-    printf("%d\n", result);
+    // Print modified array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
     return 0;
 }
