@@ -29,4 +29,3 @@ int main() {
     printf("%d\n", primeCount);  // Output number of primes
     return 0;
 }
-.
