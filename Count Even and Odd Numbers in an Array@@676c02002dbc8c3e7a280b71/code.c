@@ -1,41 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int N, K;
+    int n;
+    scanf("%d", &n);
 
-    // Read size of array
-    scanf("%d", &N);
+    int evenCount = 0, oddCount = 0, number;
 
-    int arr[N];
-    
-    // Read array elements
-    for (int i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &number);
+
+        if (number % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
     }
 
-    // Read number of steps to rotate
-    scanf("%d", &K);
-
-    // Make sure K is within the bounds
-    K = K % N;
-
-    // Create a new array to store the rotated result
-    int rotated[N];
-
-    // Copy last K elements to the beginning
-    for (int i = 0; i < K; i++) {
-        rotated[i] = arr[N - K + i];
-    }
-
-    // Copy the remaining elements
-    for (int i = 0; i < N - K; i++) {
-        rotated[K + i] = arr[i];
-    }
-
-    // Print the rotated array
-    for (int i = 0; i < N; i++) {
-        printf("%d ", rotated[i]);
-    }
+    printf("%d %d", evenCount, oddCount);
 
     return 0;
 }
