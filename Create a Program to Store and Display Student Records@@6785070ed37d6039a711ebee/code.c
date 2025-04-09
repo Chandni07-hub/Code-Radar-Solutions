@@ -1,32 +1,25 @@
 #include <stdio.h>
 
-// Define the structure
 struct Student {
-    int rollNumber;
+    int roll;
     char name[50];
     float marks;
 };
 
 int main() {
-    int N;
+    int n;
+    scanf("%d", &n);  // Input number of students
 
-    // Ask for the number of students
-    printf("Enter number of students: ");
-    scanf("%d", &N);
+    struct Student s[n];  // Array of structures
 
-    // Create an array of students
-    struct Student students[N];
-
-    // Input student data
-    printf("Enter roll number, name, and marks for each student:\n");
-    for (int i = 0; i < N; i++) {
-        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
+    // Input student details
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &s[i].roll, s[i].name, &s[i].marks);
     }
 
-    // Display student details
-    printf("\nStudent Details:\n");
-    for (int i = 0; i < N; i++) {
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+    // Output student details
+    for (int i = 0; i < n; i++) {
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", s[i].roll, s[i].name, s[i].marks);
     }
 
     return 0;
