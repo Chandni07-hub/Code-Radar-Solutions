@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     int n;
     scanf("%d", &n);
@@ -27,6 +28,7 @@ int main() {
         }
         count[arr[i]]++;
     }
+
     // Optional: If no duplicate is found
     printf("No duplicate found\n");
     return 0;
