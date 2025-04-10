@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 // Function to perform selection sort
 void selectionSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
@@ -15,7 +14,6 @@ void selectionSort(int arr[], int n) {
         arr[minIndex] = temp;
     }
 }
-
 // Function to print the sorted array
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
