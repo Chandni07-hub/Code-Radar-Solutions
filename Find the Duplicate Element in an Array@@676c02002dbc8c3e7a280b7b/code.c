@@ -21,6 +21,10 @@ int main() {
     // Find and print the duplicate element
     for(int i = 0; i < N; i++) {
         if(freq[arr[i]] > 1) {
-            printf("%d"\n);
+            printf("%d\n", arr[i]);
+            break;
         }
     }
+
+    return 0;
+}
