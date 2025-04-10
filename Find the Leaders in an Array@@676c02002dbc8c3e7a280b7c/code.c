@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Comparison function for sorting
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
 // Function to find the pair with the smallest difference
 void findSmallestDifference(int arr[], int n) {
-    // Sort the array first (helps in finding the closest pairs easily)
-    qsort(arr, n, sizeof(int), (int (*)(const void*, const void*))compar);
+    // Sort the array to make comparisons easier
+    qsort(arr, n, sizeof(int), compare);
 
     int minDiff = __INT_MAX__;
     int num1 = 0, num2 = 0;
@@ -23,18 +28,11 @@ void findSmallestDifference(int arr[], int n) {
     printf("%d %d\n", num1, num2);
 }
 
-// Comparison function for qsort
-int compar(const void* a, const void* b) {
-    return (*(int*)a - *(int*)b);
-}
-
 int main() {
     int n;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter the array elements: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
