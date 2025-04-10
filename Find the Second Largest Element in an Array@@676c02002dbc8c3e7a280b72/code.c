@@ -2,6 +2,10 @@
 int main() {
     int N;
     scanf("%d", &N);
+    if (N < 2) {
+        printf("-1\n");
+        return 0;
+    }
     int arr[N];
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
@@ -16,6 +20,10 @@ int main() {
             secondMax = arr[i];
         }
     }
-    printf("%d\n", secondMax);
+    if (secondMax == -2147483648) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", secondMax);
+    }
     return 0;
 }
