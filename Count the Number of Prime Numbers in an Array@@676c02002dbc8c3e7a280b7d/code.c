@@ -1,40 +1,27 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include <math.h>
-
 // Function to check if a number is prime
-bool is_prime(int num) {
-    if (num <= 1) return false;
-    if (num == 2) return true;
-    if (num % 2 == 0) return false;
-    for (int i = 3; i <= (int)sqrt(num); i += 2) {
-        if (num % i == 0) return false;
+int isPrime(int num) {
+    if (num <= 1)
+        return 0;
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0)
+            return 0;
     }
-    return true;
+    return 1;
 }
-
 int main() {
     int n;
-    if (scanf("%d", &n) != 1) return 1;  // Input error check
+    scanf("%d", &n);
+    int arr[n];
 
-    if (n <= 0) {
-        printf("0\n");
-        return 0;
-    }
-
-    int arr[1000];  // Safe limit, adjust as needed
-
+    for (int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+    int count = 0;
     for (int i = 0; i < n; i++) {
-        if (scanf("%d", &arr[i]) != 1) return 1;  // Input error check
+        if (isPrime(arr[i]))
+            count++;
     }
-
-    int prime_count = 0;
-    for (int i = 0; i < n; i++) {
-        if (is_prime(arr[i])) {
-            prime_count++;
-        }
-    }
-
-    printf("%d\n", prime_count);
+    printf("%d\n", count);
     return 0;
 }
