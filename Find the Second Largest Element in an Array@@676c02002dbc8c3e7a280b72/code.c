@@ -1,31 +1,21 @@
 #include <stdio.h>
-#include <limits.h>
-
 int main() {
-    int n;
-    scanf("%d", &n);  // Read the number of elements
-
-    int arr[n];
-
-    // Read the array elements
-    for (int i = 0; i < n; i++) {
+    int N;
+    scanf("%d", &N);
+    int arr[N];
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-
-    int largest = INT_MIN;
-    int secondLargest = INT_MIN;
-
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > largest) {
-            secondLargest = largest;
-            largest = arr[i];
-        } else if (arr[i] > secondLargest && arr[i] != largest) {
-            secondLargest = arr[i];
+    int max = -2147483648;
+    int secondMax = -2147483648;
+    for (int i = 0; i < N; i++) {
+        if (arr[i] > max) {
+            secondMax = max;
+            max = arr[i];
+        } else if (arr[i] > secondMax && arr[i] != max) {
+            secondMax = arr[i];
         }
     }
-
-    printf("%d\n", secondLargest);
-
+    printf("%d\n", secondMax);
     return 0;
 }
-
