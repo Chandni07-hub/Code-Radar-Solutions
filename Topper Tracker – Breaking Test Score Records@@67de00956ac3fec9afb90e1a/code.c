@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void trackScores(int scores[], int n, int result[]) {
+int main trackScores(int scores[], int n, int result[]) {
     int maxScore = scores[0];
     int minScore = scores[0];
     int maxBreaks = 0;
